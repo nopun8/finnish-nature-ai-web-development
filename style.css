@@ -1,0 +1,427 @@
+:root {
+    --text: #20302a;
+    --surface: #fff;
+    --line: #d9e2dd;
+    --shadow: 0 7px 22px rgba(20, 45, 34, .08);
+    --radius: 14px;
+    --accent: #2f664a;
+    --accent-dark: #173c2b;
+    --accent-soft: #e8f1eb;
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: #f7f9f7;
+    font-family: var(--font-body);
+    line-height: 1.65
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.16;
+    color: var(--accent-dark)
+}
+
+h1 {
+    font-size: clamp(2.2rem, 6vw, 4.4rem);
+    margin: 0 0 18px
+}
+
+h2 {
+    font-size: clamp(1.55rem, 3vw, 2.2rem);
+    margin-top: 0
+}
+
+.small {
+    font-size: .88rem;
+    opacity: .8
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-size: .78rem;
+    font-weight: 800;
+    color: var(--accent)
+}
+
+.section {
+    padding: 64px 0
+}
+
+.section-alt {
+    background: var(--accent-soft)
+}
+
+.site-header {
+    background: var(--accent-dark);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: var(--shadow)
+}
+
+.header-inner {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px
+}
+
+.site-title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 800
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background: rgba(255, 255, 255, .14)
+}
+
+.hero,
+.park-hero {
+    padding: 90px 0;
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    color: #fff
+}
+
+.hero h1,
+.park-hero h1,
+.hero .eyebrow,
+.park-hero .eyebrow {
+    color: #fff
+}
+
+.hero-text {
+    max-width: 800px;
+    font-size: 1.12rem
+}
+
+.page-banner {
+    padding: 68px 0;
+    background: var(--accent-soft)
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 17px;
+    border-radius: 9px;
+    font-weight: 800;
+    background: #fff;
+    color: var(--accent-dark)
+}
+
+.button.secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .55);
+    color: #fff
+}
+
+.official-button {
+    background: var(--accent);
+    color: #fff
+}
+
+.text-link {
+    font-weight: 800;
+    color: var(--accent)
+}
+
+.card-grid,
+.park-card-grid,
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px
+}
+
+.card,
+.panel,
+.source-box {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow)
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px
+}
+
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px
+}
+
+.fact-grid div {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 18px;
+    border-radius: 12px
+}
+
+.fact-grid span {
+    display: block;
+    color: #65736c;
+    font-size: .85rem;
+    margin-bottom: 5px
+}
+
+.park-card {
+    min-height: 180px;
+    padding: 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: var(--shadow);
+    transition: transform .18s ease
+}
+
+.park-card:hover {
+    transform: translateY(-4px)
+}
+
+.park-card strong {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 8px
+}
+
+.park-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 28px
+}
+
+.tab {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 800;
+    border: 2px solid rgba(255, 255, 255, .35);
+    background: #fff;
+    color: #182a22
+}
+
+.page-banner .tab {
+    border-color: rgba(0, 0, 0, .1)
+}
+
+.syote-card,
+.syote-tab {
+    background: #dcefe2;
+    color: #17442c
+}
+
+.oulanka-card,
+.oulanka-tab {
+    background: #d8edf7;
+    color: #194b66
+}
+
+.riisitunturi-card,
+.riisitunturi-tab {
+    background: #e4e4f7;
+    color: #3c3f75
+}
+
+.hossa-card,
+.hossa-tab {
+    background: #d9f1ef;
+    color: #165957
+}
+
+.rokua-card,
+.rokua-tab {
+    background: #efe3cc;
+    color: #694c26
+}
+
+ul {
+    padding-left: 22px
+}
+
+li {
+    margin-bottom: 8px
+}
+
+.site-footer {
+    background: var(--accent-dark);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0
+}
+
+.site-footer p {
+    margin: 4px 0
+}
+
+.home-page {
+    --accent: #3f7658;
+    --accent-dark: #173c2b;
+    --accent-soft: #e6f0e9
+}
+
+.parks-page {
+    --accent: #476f50;
+    --accent-dark: #203c29;
+    --accent-soft: #e6eee5
+}
+
+.syote-page {
+    --accent: #427653;
+    --accent-dark: #214936;
+    --accent-soft: #e5f0e8;
+    --font-body: "Trebuchet MS", Arial, sans-serif;
+    --font-heading: "Trebuchet MS", Arial, sans-serif
+}
+
+.oulanka-page {
+    --accent: #367a9a;
+    --accent-dark: #17465c;
+    --accent-soft: #e3f1f7
+}
+
+.riisitunturi-page {
+    --accent: #7278a6;
+    --accent-dark: #40456f;
+    --accent-soft: #ececf7;
+    --font-body: Verdana, Geneva, sans-serif;
+    --font-heading: Verdana, Geneva, sans-serif
+}
+
+.hossa-page {
+    --accent: #2f817d;
+    --accent-dark: #165957;
+    --accent-soft: #e3f3f1;
+    --font-body: Tahoma, Verdana, sans-serif;
+    --font-heading: Tahoma, Verdana, sans-serif
+}
+
+.rokua-page {
+    --accent: #9a7445;
+    --accent-dark: #694c26;
+    --accent-soft: #f3ead9
+}
+
+.wildlife-page {
+    --accent: #7b5a3d;
+    --accent-dark: #4d3828;
+    --accent-soft: #f1e9df;
+    --font-body: "Trebuchet MS", Arial, sans-serif
+}
+
+.activities-page {
+    --accent: #b76a2f;
+    --accent-dark: #75401d;
+    --accent-soft: #fff0df;
+    --font-heading: Arial, Helvetica, sans-serif
+}
+
+.equipment-page {
+    --accent: #5b6770;
+    --accent-dark: #364048;
+    --accent-soft: #e9edf0;
+    --font-body: Verdana, Geneva, sans-serif;
+    --font-heading: Verdana, Geneva, sans-serif
+}
+
+@media(max-width:900px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0
+    }
+
+    .main-nav {
+        width: 100%
+    }
+
+    .card-grid,
+    .park-card-grid,
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .fact-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media(max-width:650px) {
+
+    .card-grid,
+    .park-card-grid,
+    .equipment-grid,
+    .two-column,
+    .fact-grid {
+        grid-template-columns: 1fr
+    }
+
+    .hero,
+    .park-hero {
+        padding: 64px 0
+    }
+
+    .section {
+        padding: 46px 0
+    }
+
+    .main-nav {
+        flex-direction: column
+    }
+
+    .main-nav a {
+        padding-left: 0
+    }
+}
