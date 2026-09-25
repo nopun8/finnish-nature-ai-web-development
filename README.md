@@ -1,6 +1,6 @@
 # Finnish Nature and National Parks Website
 
-Bachelor's thesis project by **S M Fahim Alam** and **Abul Hasnat**.
+Bachelor's thesis project by **S M Fahim Alam** and **Abul Hasnat** **,Sumaiya khan**.
 
 ## Pages
 - index.html
